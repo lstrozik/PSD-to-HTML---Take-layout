@@ -1,0 +1,441 @@
+// Global styles //
+
+@import url('https://fonts.googleapis.com/css?family=Lato')
+
+*
+  box-sizing: border-box
+  font-family: "Lato"
+
+.container
+  max-width: 1400px
+  min-height: 500px
+  margin: 0 auto
+
+p
+  line-height: 30px
+
+
+body
+  margin: 0
+
+// Grid //
+
+.row:before, .row:after
+  content: ""
+  display: table
+  clear: both
+
+[class*="col-"]
+  float: left
+  margin-top: 40px
+  padding: 0 20px
+
+
+.col-1
+  width: 8.33%
+.col-2
+  width: 16.66%
+.col-3
+  width: 25%
+.col-4
+  width: 33.33%
+.col-5
+  width: 41.66%
+.col-6
+  width: 50%
+.col-7
+  width: 58.33%
+.col-8
+  width: 66.66%
+.col-9
+  width: 75%
+.col-10
+  width: 83.33%
+.col-11
+  width: 91.66%
+.col-12
+  width: 100%
+
+// responsive grid
+
+@media (max-width: 767px)
+  .col-s-1
+    width: 8.33%
+  .col-s-2
+    width: 16.66%
+  .col-s-3
+    width: 25%
+  .col-s-4
+    width: 33.33%
+  .col-s-5
+    width: 41.66%
+  .col-s-6
+    width: 50%
+  .col-s-7
+    width: 58.33%
+  .col-s-8
+    width: 66.66%
+  .col-s-9
+    width: 75%
+  .col-s-10
+    width: 83.33%
+  .col-s-11
+    width: 91.66%
+  .col-s-12
+    width: 100%
+
+@media (min-width: 768px) and (max-width: 1300px)
+  .col-m-1
+    width: 8.33%
+  .col-m-2
+    width: 16.66%
+  .col-m-3
+    width: 25%
+  .col-m-4
+    width: 33.33%
+  .col-m-5
+    width: 41.66%
+  .col-m-6
+    width: 50%
+  .col-m-7
+    width: 58.33%
+  .col-m-8
+    width: 66.66%
+  .col-m-9
+    width: 75%
+  .col-m-10
+    width: 83.33%
+  .col-m-11
+    width: 91.66%
+  .col-m-12
+    width: 100%
+
+
+// Jumbotron //
+
+.jumbotron
+  min-height: 100vh
+  min-width: 100vh
+  background: url("../img/pexels-photo-147329.jpeg")
+  background-size: cover
+  .take
+    width: 150px
+    height: 50px
+    color: white
+    font-size: 48px
+    text-shadow: 5px 5px 20px black
+    a
+      display: inline-block
+      text-decoration: none
+      color: white
+  .pic-perfect
+    padding-top: 25%
+    position: relative
+    bottom: 20px
+    .picture-perfect
+      color: white
+      max-width: 450px
+      max-height: 400px
+      text-shadow: 5px 5px 20px black
+      h1
+        font-size: 56px
+        font-weight: lighter
+
+// Mobile //
+
+section.mobile
+  margin-bottom: 40px
+  .col-6
+    line-height: 30px
+    position: relative
+    img
+      position: absolute
+      top: -700px
+    h1
+      font-size: 32px
+      padding: 0
+    p
+      padding: 0
+
+// Gallery //
+
+.gallery
+  height: 100%
+  color: white
+  .col-3, .col-6
+    height: 250px
+    margin-top: 0
+    position: relative
+    h1
+      padding: 0 20px
+      font-weight: lighter
+    p
+      padding: 20px 20px
+    a
+      padding: 0 20px
+      position: absolute
+      bottom: 20px
+      text-decoration: none
+      color: white
+      font-weight: bold
+      transition: 0.2s
+      &:hover
+        transform: scale(1.1)
+        transition: 0.4s
+  .design
+    background-color: #394648
+  .built
+    background-color: #9b59b6
+  .clients
+    background: url("../img/pexels-photo-59004.jpeg")
+    background-size: cover
+    background-position: center
+  .shoot
+    background-color: #34495e
+  .sign-up
+    background: url("../img/pexels-photo-199858.jpeg")
+    background-size: cover
+    background-position: bottom
+  .perfect
+    background-color: #B48291
+  .start
+    background: url("../img/pexels-photo-31327.jpg")
+    background-size: cover
+
+//          Section "Four"        //
+
+.look
+  h1
+    font-size: 32px
+    color: #191919
+    padding-top: 20px
+
+  .advantages
+    .adv
+      h1, p
+        color: #464646
+
+//          Second Jumbotron          //
+
+.second-jumbotron
+  background: url("../img/street-car-vehicle-vintage.jpeg")
+  min-height: 100%
+  min-width: 100%
+  object-fit: cover
+  .middle
+    padding-top: 20%
+    .power
+      color: white
+      max-width: 500px
+      position: relative
+      bottom: 30px
+      h1
+        font-size: 48px
+        font-weight: normal
+      a
+        color: white
+        text-decoration: none
+        font-weight: bold
+
+//            Section-three       //
+
+.section-three
+  background-color: #2ecc71
+  .wide
+    h1
+      font-size: 32px
+      color: white
+  .three-sections
+    margin: 0 auto
+    h1, p
+      color: white
+
+//            Plans           //
+
+.options
+  background-color: #f2f2f2
+  padding: 70px 0 100px 0
+  .plans
+    margin: 0 auto
+    background-color: #f2f2f2
+    .col-6
+      padding: 20px
+      transition: 0.5s
+      &:hover
+        background-color: white
+        box-shadow: 0px 0px 20px black
+        transition: 0.5s
+      &:hover h4
+        background-color: #9b59b6
+        transition: 0.5s
+      .package
+        padding: 20px
+      h4
+        text-transform: uppercase
+        border-radius: 5px
+        background-color: grey
+        color: white
+        display: inline-block
+        padding: 10px 15px
+        letter-spacing: 1px
+        transition: 0.5s
+      h1
+        font-size: 32px
+        font-weight: normal
+      p
+        padding-right: 20px
+        line-height: 30px
+        color: #464646
+      button
+        background-color: #2ecc71
+        color: white
+        text-transform: uppercase
+        border-radius: 5px
+        padding: 15px 30px
+        margin-top: 10px
+        font-weight: bold
+        letter-spacing: 1px
+        border: none
+        cursor: pointer
+        outline: none
+      i
+        color: grey
+        font-size: 24px
+        padding: 10px
+
+//         Footer        //
+
+footer
+  background-color: #2c3e50
+  color: white
+  padding-bottom: 50px
+  .col-6
+    padding: 0
+    .col-4
+      padding: 0
+  .get, .stay
+    margin-top: 50px
+    font-size: 24px
+    font-weight: normal
+  .footer-text
+    line-height: 30px
+    font-weight: normal
+  a
+    display: block
+    text-decoration: none
+    color: white
+    line-height: 30px
+  .search
+    padding-left: 60px
+    form
+      max-width: 400px
+      margin: 0
+      background-color: white
+      input
+        width: 300px
+        height: 40px
+        background: white
+        border-radius: 3%
+        font-size: 20px
+        border: 2px solid white
+        outline: none
+    button
+      float: right
+      cursor: pointer
+      height: 40px
+      width: 15%
+      background-color: rgba(60, 179, 113, 0.8)
+      border: 2px solid rgba(60, 179, 113, 0.8)
+      border-radius: 3%
+      &:hover
+        background-color: rgba(60, 179, 113, 1)
+        border: 2px solid rgba(60, 179, 113, 1)
+        color: rgba(255, 255, 255, 1)
+
+
+// media queries
+@media (min-width: 1300px) and (max-width: 1470px)
+  .mobile
+    img
+      width: 600px
+      height: 800px
+      margin-top: 150px
+  .last-section
+    margin: 0 20px
+
+@media (min-width: 768px) and (max-width: 1300px)
+
+  .mobile
+    img
+      width: 500px
+      height: 700px
+      margin-top: 300px
+
+
+  .options
+    .double
+      float: none
+      width: 700px
+      margin: 0 auto
+      text-align: center
+
+  .last-section
+    margin: 0 50px
+    text-align: center
+    .search
+      padding: 0px
+      .input
+        margin: 0 auto
+
+@media (min-width: 768px) and (max-width: 1060px)
+  .jumbotron
+    min-height: 100%
+    min-width: 100%
+
+  .mobile
+    img
+      width: 450px
+      height: 700px
+      margin-top: 250px
+      margin-left: -100px
+
+
+@media (max-width: 768px)
+
+  .jumbotron
+    min-height: 100%
+    min-width: 100%
+
+  .mobile
+    img
+      display: none
+
+  p,a
+    font-size: 14px
+
+  .take
+    font-size: 24px
+
+  h3
+    margin: 0 10px
+  .double
+    float: none
+    max-width: 400px
+    margin: 0 auto
+    text-align: center
+
+  .last-section
+    margin: 0 50px
+    text-align: center
+    float: none
+    .search
+      padding: 0px
+      .input
+        margin: 0 auto
+        width: 190px
+        input
+          width: 190px
+      button
+        width: 190px
+    p
+      margin-top: 50px
