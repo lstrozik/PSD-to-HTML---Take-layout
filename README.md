@@ -1,3 +1,5 @@
 # Take---PSD-to-HTML
 
-Html, sass, 
+Html, sass, RWD
+
+ https://lstrozik.github.io/PSD-to-HTML---Take-layout/
